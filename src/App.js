@@ -21,6 +21,10 @@ function App() {
 
 
     })
+    .catch(() => {
+      setLoading(false) ;
+      setError("Error fetching data!");
+    })
 
   }
 
