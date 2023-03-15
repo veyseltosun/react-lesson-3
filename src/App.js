@@ -1,5 +1,6 @@
 import React, {useReducer, useState} from "react";
 import {reducer} from "./reducer";
+import UseRef from "./UseRef";
 
 const initialState = {
   loading: false,
@@ -49,6 +50,7 @@ function App() {
       <button onClick={fetchDog} disabled={loading}>Random Dog</button>
     {data && <img src={data} alt="dog" /> } 
     {error && <p>{error}</p>}
+    <UseRef/>
     </div>
   );
 }
